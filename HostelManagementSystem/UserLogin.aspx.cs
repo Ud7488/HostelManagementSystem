@@ -10,7 +10,7 @@ namespace HostelManagementSystem
         string strcon = ConfigurationManager.ConnectionStrings["con"].ConnectionString;
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
         // user login
         protected void Login_Click(object sender, EventArgs e)

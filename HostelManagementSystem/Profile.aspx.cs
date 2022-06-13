@@ -12,7 +12,7 @@ namespace HostelManagementSystem
 {
     public partial class Profile : System.Web.UI.Page
     {
-        string strcon = ConfigurationManager.ConnectionStrings["con"].ConnectionString;
+        string Strcon = ConfigurationManager.ConnectionStrings["con"].ConnectionString;
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -69,7 +69,7 @@ namespace HostelManagementSystem
             }
             try
             {
-                SqlConnection con = new SqlConnection(strcon);
+                SqlConnection con = new SqlConnection(Strcon);
                 if (con.State == ConnectionState.Closed)
                 {
                     con.Open();
@@ -110,7 +110,7 @@ namespace HostelManagementSystem
         {
             try
             {
-                SqlConnection con = new SqlConnection(strcon);
+                SqlConnection con = new SqlConnection(Strcon);
                 if (con.State == ConnectionState.Closed)
                 {
                     con.Open();

@@ -24,6 +24,15 @@ namespace HostelManagementSystem
         protected global::System.Web.UI.WebControls.TextBox TextBox1;
 
         /// <summary>
+        /// RegularExpressionValidator2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator2;
+
+        /// <summary>
         /// TextBox2 control.
         /// </summary>
         /// <remarks>
@@ -85,15 +94,6 @@ namespace HostelManagementSystem
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBox6;
-
-        /// <summary>
-        /// RegEmail control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegEmail;
 
         /// <summary>
         /// TextBox8 control.

@@ -12,8 +12,10 @@
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
 
-    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap-select.css" rel="stylesheet" />
 
 </head>
 <body>
@@ -38,45 +40,74 @@
             </Scripts>
         </asp:ScriptManager>
 
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" runat="server" href="~/">Kohinoor Boys Hostel</a>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="navbar-nav mr-auto">
+        <nav class="navbar navbar-expand-sm bg-light navbar-light">
+            <!-- Brand -->
+            <a class="navbar-brand" href="Default.aspx"><b>Kohinoor Boys Hostel</b></a>
+            <!--For Mobile hamburger-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Responsive-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Links -->
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <asp:LinkButton class="nav-link" runat="server" Visible="true" ID="HOME" href="Default.aspx">Home</asp:LinkButton>
+                    </li>
+                    &nbsp;
                         <li class="nav-item active">
-                            <a class="nav-link" href="Default.aspx">Home</a>
+                            <asp:LinkButton class="nav-link" runat="server" Visible="true" ID="CONTACTUS" href="Contact.aspx">Contact Us</asp:LinkButton>
                         </li>
-                        &nbsp;
+                    &nbsp;
+                    <li class="nav-item active">
+                        <asp:LinkButton class="nav-link" ID="ROOM_INFO" runat="server" Visible="False" OnClick="ROOM_INFO_Click" >Room Info</asp:LinkButton>
+                    </li>
+                    &nbsp;
                         <li class="nav-item active">
-                            <a class="nav-link" href="Contact.aspx">Contact Us</a>
+                            <asp:LinkButton class="nav-link" ID="STUDENT_INFO" runat="server" Visible="False" OnClick="STUDENT_INFO_Click" >Student Info</asp:LinkButton>
                         </li>
-                        &nbsp;
-                    </ul>
+                    &nbsp;
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="PAYMENT_INFO" runat="server" Visible="False" OnClick="PAYMENT_INFO_Click" >Payment Info</asp:LinkButton>
+                        </li>
+                    &nbsp;
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="EMPLOYEE_INFO" runat="server" Visible="False" OnClick="EMPLOYEE_INFO_Click" >Employee Info</asp:LinkButton>
+                        </li>
+                    &nbsp;
+                    <li class="nav-item active">
+                        <asp:LinkButton class="nav-link" ID="VENDOR_INFO" runat="server" Visible="False" OnClick="VENDOR_INFO_Click" >Vendor Info</asp:LinkButton>
+                    </li>
+                    &nbsp;
+                    <li class="nav-item active">
+                        <asp:LinkButton class="nav-link" ID="ROOM_REQUEST" runat="server" Visible="False" OnClick="ROOM_REQUEST_Click" >Room Request</asp:LinkButton>
+                    </li>
+                </ul>
 
-                    <ul class="navbar-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <asp:LinkButton class="nav-link" ID="UserLogin" runat="server" OnClick="UserLogin_Click">User Login</asp:LinkButton>
+                    </li>
+                    &nbsp;
                         <li class="nav-item active">
-                            <asp:LinkButton class="nav-link" ID="UserLogin" runat="server" OnClick="UserLogin_Click" >User Login</asp:LinkButton>
-                        </li>&nbsp;
+                            <asp:LinkButton class="nav-link" ID="SignUp" runat="server" OnClick="SignUp_Click">Sign Up</asp:LinkButton>
+                        </li>
+                    &nbsp;
                         <li class="nav-item active">
-                            <asp:LinkButton class="nav-link" ID="SignUp" runat="server" OnClick="SignUp_Click" >Sign Up</asp:LinkButton>
-                        </li>&nbsp;
+                            <asp:LinkButton class="nav-link" ID="LogOut" runat="server" Visible="False" OnClick="LogOut_Click">Logout</asp:LinkButton>
+                        </li>
+                    &nbsp;
                         <li class="nav-item active">
-                            <asp:LinkButton class="nav-link" ID="LogOut" runat="server"  Visible="False" OnClick="LogOut_Click">Logout</asp:LinkButton>
-                        </li>&nbsp;
-                        <li class="nav-item active">
-                            <asp:LinkButton class="nav-link" ID="Hello" runat="server"  Visible="False" OnClick="Hello_Click">Hello </asp:LinkButton>
-                        </li>&nbsp;
-                    </ul>
-                </div>
+                            <asp:LinkButton class="nav-link" ID="Hello" runat="server" Visible="False" OnClick="Hello_Click">Hello </asp:LinkButton>
+                        </li>
+                    &nbsp;
+                    <li class="nav-item active">
+                        <asp:LinkButton class="nav-link" ID="Admin" runat="server" OnClick="Admin_Click" >Admin Login</asp:LinkButton>
+                    </li>
+                </ul>
             </div>
-        </div>
+        </nav>
+
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>

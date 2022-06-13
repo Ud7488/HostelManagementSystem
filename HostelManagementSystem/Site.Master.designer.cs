@@ -15,6 +15,78 @@ namespace HostelManagementSystem
     {
 
         /// <summary>
+        /// HOME control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton HOME;
+
+        /// <summary>
+        /// CONTACTUS control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton CONTACTUS;
+
+        /// <summary>
+        /// ROOM_INFO control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton ROOM_INFO;
+
+        /// <summary>
+        /// STUDENT_INFO control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton STUDENT_INFO;
+
+        /// <summary>
+        /// PAYMENT_INFO control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton PAYMENT_INFO;
+
+        /// <summary>
+        /// EMPLOYEE_INFO control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton EMPLOYEE_INFO;
+
+        /// <summary>
+        /// VENDOR_INFO control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton VENDOR_INFO;
+
+        /// <summary>
+        /// ROOM_REQUEST control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton ROOM_REQUEST;
+
+        /// <summary>
         /// UserLogin control.
         /// </summary>
         /// <remarks>
@@ -49,6 +121,15 @@ namespace HostelManagementSystem
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton Hello;
+
+        /// <summary>
+        /// Admin control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton Admin;
 
         /// <summary>
         /// MainContent control.

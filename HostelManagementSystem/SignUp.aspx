@@ -33,9 +33,16 @@
                   </div>
                   <div class="row">
                      <div class="col-6">
-                        <label>Member ID</label>
+                        <label>Email</label>
                         <div class="form-group">
-                           <asp:TextBox class="form-control" ID="TextBox1" runat="server" ></asp:TextBox>
+                           <asp:TextBox class="form-control" ID="TextBox1" runat="server" TextMode="Email" ></asp:TextBox>
+                            <asp:RegularExpressionValidator 
+                                   ID="RegularExpressionValidator2"
+                                   ControlToValidate="TextBox6"
+                                   ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" 
+                                   runat="server" 
+                                   ErrorMessage="Enter valid Email Address">
+                               </asp:RegularExpressionValidator>
                         </div>
                      </div>
                      <div class="col-6">
@@ -74,22 +81,15 @@
                    </div>
                    <div class="row">
                        <div class="col-md-6">
-                           <label>Contact No</label>
+                           <label>Phone Number</label>
                            <div class="form-group">
-                               <asp:TextBox CssClass="form-control" ID="TextBox5" runat="server" placeholder="Contact No" TextMode="Number"></asp:TextBox>
+                               <asp:TextBox CssClass="form-control" ID="TextBox5" runat="server" placeholder="Phone Number" TextMode="Number"></asp:TextBox>
                            </div>
                        </div>
                        <div class="col-md-6">
-                           <label>Email ID</label>
+                           <label>Mobile Number</label>
                            <div class="form-group">
-                               <asp:TextBox CssClass="form-control" ID="TextBox6" runat="server" placeholder="Email ID" TextMode="Email"></asp:TextBox>
-                               <asp:RegularExpressionValidator 
-                                   ID="RegEmail"
-                                   ControlToValidate="TextBox6"
-                                   ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" 
-                                   runat="server" 
-                                   ErrorMessage="Enter valid Email Address">
-                               </asp:RegularExpressionValidator>
+                               <asp:TextBox CssClass="form-control" ID="TextBox6" runat="server" placeholder="Mobile Number" TextMode="Number"></asp:TextBox>
                            </div>
                        </div>
                    </div>

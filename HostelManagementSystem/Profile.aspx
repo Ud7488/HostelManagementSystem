@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container-fluid">
       <div class="row">
-         <div class="col-md-5">
+         <div class="col">
             <div class="card">
                <div class="card-body">
                   <div class="row">
@@ -113,7 +113,8 @@
                      <div class="col-8 mx-auto">
                         <center>
                            <div class="form-group">
-                              <asp:Button class="btn btn-primary btn-block btn-lg" ID="Button1" runat="server" Text="Update" OnClick="Button1_Click1" />
+                              <asp:Button class="btn btn-primary" ID="UPDATE" runat="server" Text="Update" OnClick="UPDATE_Click" />
+                              <asp:Button class="btn btn-success" ID="PAYMENT" runat="server" Text="Payment" OnClick="PAYMENT_Click" />
                            </div>
                         </center>
                      </div>

@@ -29,7 +29,6 @@ namespace HostelManagementSystem
                     {
                         getUserPersonalDetails();
                     }
-
                 }
             }
             catch (Exception ex)
@@ -38,10 +37,15 @@ namespace HostelManagementSystem
                 Response.Write("<script>alert('Session Expired Login Again');</script>");
                 Response.Redirect("userlogin.aspx");
             }
+
+        }
+        protected void PAYMENT_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("PaymentInfo.aspx");
         }
 
         // update button click
-        protected void Button1_Click1(object sender, EventArgs e)
+        protected void UPDATE_Click(object sender, EventArgs e)
         {
             if (Session["username"].ToString() == "" || Session["username"] == null)
             {
@@ -51,7 +55,6 @@ namespace HostelManagementSystem
             else
             {
                 updateUserPersonalDetails();
-
             }
         }
 
@@ -156,5 +159,6 @@ namespace HostelManagementSystem
 
             }
         }
+        
     }
 }

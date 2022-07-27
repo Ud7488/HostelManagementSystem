@@ -18,7 +18,7 @@
                     <h1>Single Sit</h1>
                     <img src="Images/Hostel5.jpg" height="150" width="250" />
                     <p style="color: cornflowerblue">Rs.10000/month</p>
-                    <asp:Button class="btn btn-lg btn-btn-info" ID="Button1" runat="server" Text="Book Now" OnClick="Button1_Click" />
+                    <asp:Button class="btn btn-lg btn-info" ID="Button1" runat="server" Text="Book Now" OnClick="Button1_Click" />
                 </div>
             </div>
             <div class="col-4">
@@ -26,7 +26,7 @@
                     <h1>Double Sit</h1>
                     <img src="Images/Hostel16.jpg" height="150" width="250" />
                     <p style="color: cornflowerblue">Per Person Rs.95000/month</p>
-                    <asp:Button class="btn btn-lg btn-btn-info" ID="Button2" runat="server" Text="Book Now" OnClick="Button2_Click" />
+                    <asp:Button class="btn btn-lg btn-info" ID="Button2" runat="server" Text="Book Now" OnClick="Button2_Click" />
                 </div>
             </div>
             <div class="col-4">
@@ -34,7 +34,7 @@
                     <h1>Triple Sit</h1>
                     <img src="Images/Hostel3.jpg" height="150" width="250" />
                     <p style="color: cornflowerblue">Per Person Rs.85000/month</p>
-                    <asp:Button class="btn btn-lg btn-btn-info" ID="Button3" runat="server" Text="Book Now" OnClick="Button3_Click" />
+                    <asp:Button class="btn btn-lg btn-info" ID="Button3" runat="server" Text="Book Now" OnClick="Button3_Click" />
                 </div>
             </div>
         </div>
